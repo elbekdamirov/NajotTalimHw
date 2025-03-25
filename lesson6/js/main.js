@@ -19,27 +19,78 @@
 // console.log(randInt(5, 90));
 
 //-----------------------3--------------------------//
-// function select(s1, s2) {
-//   res = "";
-//   for (const i in s1) {
-//     if (!s1[i].includes()) {
-//         res += s1[i]
+// function select(str1, str2) {
+//   let result = "";
+
+//   for (let i = 0; i < str1.length; i++) {
+//     if (!str2.includes(str1[i])) {
+//       result += str1[i];
 //     }
 //   }
-//   return res
+
+//   for (let i = 0; i < str2.length; i++) {
+//     if (!str1.includes(str2[i])) {
+//       result += str2[i];
+//     }
+//   }
+
+//   return result;
 // }
 // console.log(select("Salom", "Kalom"));
 
-
 //-----------------------4----------------------------//
-// function countChars(str) {
-//     let count = 0;
-//     for (let i = 0; i < str.length; i++) {
-//         count = Math.count(str[0])
-//     }
-//     return count
-// }   
+// const countLetter = (str) => {
+//   let freq = {};
+//   let result = "";
 
-// console.log(countChars("NAJOT TA'LIM"));
-// console.log(countChars("HELLO WORLD"));
-// console.log(countChars("TESTING"));      
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (char !== " ") {
+//       freq[char] = (freq[char] || 0) + 1;
+//     }
+//   }
+
+//   let first = true;
+
+//   for (let char in freq) {
+//     if (!first) {
+//       result += ", ";
+//     }
+//     result += char;
+
+//     for (let i = 0; i < freq[char]; i++) {
+//       result += "*";
+//     }
+
+//     first = false;
+//   }
+
+//   return result;
+// };
+
+// console.log(countLetter("NAJOT TA'LIM"));
+
+//------------------------ 100 balli ------------------//
+
+// const numbers = [12, 34, 556, 67, 23, 1456, 100];
+
+// function findSum(num) {
+//   let sum = 0;
+
+//   while (num > 0) {
+//     sum += num % 10;
+//     num = Math.floor(num / 10);
+//   }
+
+//   return sum;
+// }
+
+// for (let i = 0; i < numbers.length - 1; i++) {
+//   for (let j = i + 1; j < numbers.length; j++) {
+//     if (findSum(numbers[i]) > findSum(numbers[j])) {
+//       [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+//     }
+//   }
+// }
+
+// console.log(numbers);
