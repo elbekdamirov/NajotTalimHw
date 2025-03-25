@@ -40,3 +40,31 @@
 
 //----------------------------------4---------------------------------//
 
+
+
+//----------------------------------100 balli---------------------------------//
+// const arr = [4, 8, 15, 16, 23, 42];
+// let sum = 0;
+// let average;
+// let minDiff = Infinity;
+// let closest;
+
+// for (const element of arr) {
+//   sum += element;
+// }
+// average = sum / arr.length;
+
+// for (let i = 0; i < arr.length; i++) {
+//   let diff = Math.abs(average - arr[i]);
+//   if (diff < minDiff) {
+//     minDiff = diff;
+//     closest = i;
+//   }
+// }
+// let small = arr.slice(0, closest);
+// let large = arr.slice(closest);
+
+// console.log(average);
+// console.log("Small: ", small);
+// console.log("Large: ", large);
+
