@@ -25,7 +25,21 @@
 
 //---------------------------------2----------------------------------//
 
-//---------------------------------3----------------------------------//
+// function move(array, fromIndex, toIndex) {
+//   const len = array.length;
+//   fromIndex = ((fromIndex % len) + len) % len;
+//   toIndex = ((toIndex % len) + len) % len;
+
+//   const [item] = array.splice(fromIndex, 1);
+//   array.splice(toIndex, 0, item);
+
+//   return array;
+// }
+
+// console.log(move([10, 20, 30, 40, 50], 0, 2));
+// console.log(move([10, 20, 30, 40, 50], -1, -2));
+
+//---------------------------------3--x--------------------------------//
 // function getUniqueValues(arr) {
 //   let result = [];
 
@@ -39,8 +53,12 @@
 // console.log(getUniqueValues([1, 2, 2, 3, 4, 4, 5]));
 
 //----------------------------------4---------------------------------//
+// const text =
+//   "Berilgan matn ichidagi barcha so'zlarni uzunligi bo'yicha teskari tartibda tartiblab chiqaring";
 
+// const sortedWords = text.split(" ").sort((a, b) => b.length - a.length).join(" ");
 
+// console.log(sortedWords);
 
 //----------------------------------100 balli---------------------------------//
 // const arr = [4, 8, 15, 16, 23, 42];
@@ -67,4 +85,3 @@
 // console.log(average);
 // console.log("Small: ", small);
 // console.log("Large: ", large);
-
