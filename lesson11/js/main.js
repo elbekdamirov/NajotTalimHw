@@ -1,16 +1,14 @@
 //----------------------------------2-------------------------------------//
 
-document.addEventListener("DOMContentLoaded", function () {
-  let specialDivs = document.querySelectorAll(".special");
-  let overallCount = 1;
+let specialDivs = document.querySelectorAll(".special");
+let globalIndex = 1;
 
-  for (let divIndex = 0; divIndex < specialDivs.length; divIndex++) {
-    let paragraphs = specialDivs[divIndex].querySelectorAll("p");
-    for (let pIndex = 0; pIndex < paragraphs.length; pIndex++) {
-      paragraphs[pIndex].textContent = `Div ${divIndex + 1}, Paragraf ${
-        pIndex + 1
-      }: ${paragraphs[pIndex].textContent}`;
-      overallCount++;
-    }
-  }
+specialDivs.forEach((div, divIndex) => {
+  let paragraphs = div.querySelectorAll("p");
+  paragraphs.forEach((p, pIndex) => {
+    let divNumber = divIndex + 1;
+    let paraNumber = pIndex + 1;
+    p.textContent = `Div ${divNumber}, Paragraf ${paraNumber}: ${p.textContent}`;
+  });
+  globalIndex += paragraphs.length;
 });
