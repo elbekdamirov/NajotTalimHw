@@ -1,7 +1,6 @@
 //----------------------------------2-------------------------------------//
 
 let specialDivs = document.querySelectorAll(".special");
-let globalIndex = 1;
 
 specialDivs.forEach((div, divIndex) => {
   let paragraphs = div.querySelectorAll("p");
@@ -10,5 +9,4 @@ specialDivs.forEach((div, divIndex) => {
     let paraNumber = pIndex + 1;
     p.textContent = `Div ${divNumber}, Paragraf ${paraNumber}: ${p.textContent}`;
   });
-  globalIndex += paragraphs.length;
 });
