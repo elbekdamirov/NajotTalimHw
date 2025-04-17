@@ -46,6 +46,10 @@ app.get("/monitors", (req, res) => {
   res.render(createViewPage("monitors"), { title: "Monitors" });
 });
 
+app.use((req, res)=> {
+  res.render(createViewPage("404"), {title: "404 Not Found"})
+})
+
 app.listen(PORT, () => {
   console.log(`Server started at: http://localhost:${PORT}`);
 });
