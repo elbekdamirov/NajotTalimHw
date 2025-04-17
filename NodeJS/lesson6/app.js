@@ -14,35 +14,35 @@ app.get("/", (req, res) => {
   res.render(createViewPage("index"), { title: "Main" });
 });
 
-app.get("/", (req, res) => {
+app.get("/telephones", (req, res) => {
   res.render(createViewPage("telephones"), { title: "Telephones" });
 });
 
-app.get("/", (req, res) => {
+app.get("/planshets", (req, res) => {
   res.render(createViewPage("planshets"), { title: "Planshets" });
 });
 
-app.get("/", (req, res) => {
+app.get("/televisions", (req, res) => {
   res.render(createViewPage("televisions"), { title: "Televisions" });
 });
 
-app.get("/", (req, res) => {
+app.get("/laptops", (req, res) => {
   res.render(createViewPage("laptops"), { title: "Laptops" });
 });
 
-app.get("/", (req, res) => {
+app.get("/smartwatches", (req, res) => {
   res.render(createViewPage("smartwatches"), { title: "Smartwatches" });
 });
 
-app.get("/", (req, res) => {
+app.get("/ac", (req, res) => {
   res.render(createViewPage("ac"), { title: "AC" });
 });
 
-app.get("/", (req, res) => {
+app.get("/fridges", (req, res) => {
   res.render(createViewPage("fridges"), { title: "Fridges" });
 });
 
-app.get("/", (req, res) => {
+app.get("/monitors", (req, res) => {
   res.render(createViewPage("monitors"), { title: "Monitors" });
 });
 
